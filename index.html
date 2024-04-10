@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Dream Cars</title>
+        <link rel="icon" type="image/x-icon" href="car-front-fill.svg">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" href="style.css">
+        <!-- Bootstrap css -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <!-- Bootstrape icons -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- Bootstrap JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+        <!-- jQuer -->
+        <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+        <!-- Google Font -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://fontawesome.com/icons/garage-car?f=classic&s=solid">
+        <!-- Footer External css -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    </head>
+    <body>
+        <!-- Header Start -->
+        <section>
+            <div class="container-fluid">
+                <div class="row p-2">
+                    <!-- Logo -->
+                    <div class="col-md-2 mt-2 ms-4">
+                        <h4 class="fs-3 text-secondary"><span
+                                class="text-danger">D</span>ream <span
+                                class="text-danger">C</span>ars</h4>
+                    </div>
+                    <div class="col-md-7 mt-2"></div>
+                    <!-- Contact Button -->
+                    <div class="col-md-2 ms-5">
+                        <button
+                            class="btn p-2 fs-5 pn-part">
+                            <span
+                                class="bi bi-telephone-fill">+91
+                                6354287550</span></button>
+                    </div>
+                </div>
+                <hr class="m-0 ms-5 me-5">
+            </div>
+            <!-- Navbar Start -->
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 nav-item">
+
+                        <nav
+                            class="nav navbar navbar-expand-md p-2 pb-0">
+
+                            <!-- toggler button -->
+                            <button type="button"
+                                class="navbar-toggler border border-0 pb-3"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#btn-coll">
+                                <span
+                                    class="bi bi-three-dots-vertical text-dark p-3 fs-1"></span>
+                            </button>
+                            <!-- navbar -->
+                            <div class="collapse navbar-collapse" id="btn-coll">
+                                <ul class="navbar-link">
+                                    <li class="ps-4"><a href="#">Home</a></li>
+                                    <li class="ps-4"><a
+                                            href="services.html">Services</a></li>
+                                    <li class="ps-4"><a href="about.html">About</a></li>
+                                    <li class="ps-4"><a
+                                            href="modification.html">Modification</a></li>
+                                    <li class="ps-4"><a href="offers.html">Offers</a></li>
+                                    <li class="ps-4"><a
+                                            href="Gallery.html">Gallery</a></li>
+                                    <li class="ps-4"><a
+                                            href="insurence.html">Insurence</a></li>
+                                    <li class="ps-4"><a href="ac.html">Ac
+                                            Service</a></li>
+                                    <li class="ps-4"><a href="contact.html">Contact
+                                            -Us</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-md-2 nav-button">
+                        <form class="d-flex login">
+                            <button class="btn"
+                                type="button">Cart</button>
+                            <button class="btn"
+                                type="button" data-bs-toggle="modal"
+                                data-bs-target="#login">LogIn</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Navbar End -->
+        </section>
+        <!-- Header Start -->
+
+        <!-- Modal Start -->
+        <div class="modal fade" id="login" tabindex="-1"
+            aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal
+                            title</h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1"
+                                    class="form-label">Email address</label>
+                                <input type="email" class="form-control"
+                                    id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll
+                                    never share your email with anyone
+                                    else.</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1"
+                                    class="form-label">Password</label>
+                                <input type="password" class="form-control"
+                                    id="exampleInputPassword1">
+                            </div>
+                            <div class="mb-3">
+                                <p>can't not have an account ? <a href="signup.html" class="text-primary">Sign Up</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary"
+                            data-bs-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal End -->
+
+        <!-- Carousel Start -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner mt-2">
+                <div class="carousel-item active">
+                    <img src="bmw7-1.webp" class="d-block w-100"
+                        alt="...">
+                    <div
+                        class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
+                        <h5>Pure Power. Masterful Engineering.</h5>
+                        <p>We Have the Latest Sport Cars</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="462249.jpg" class="d-block w-100"
+                        alt="...">
+                    <div
+                        class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
+                        <h5>Ready for the Race Track.</h5>
+                        <p>PowerFul Receing Cars Services</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="mg5zm9p8hr601.jpg" class="d-block w-100"
+                        alt="...">
+                    <div
+                        class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
+                        <h5>Vintage and Classic Cars</h5>
+                        <p>Every old cars spartPart available</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="bmw6-1.webp" class="d-block w-100"
+                        alt="...">
+                    <div
+                        class="carousel-caption d-flex flex-column h-100 align-items-center justify-content-center bottom-0">
+                        <h5>Make an Impression.</h5>
+                        <p>All Company cars repairing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Card Slider Start -->
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-md-5">
+                    <p class="gap">
+                        <p class="fs-3 text-success text-center"><span
+                                class="bi bi-star-fill"> 4.7/<span
+                                    class="fs-5">5</span></p>
+                            <p class="fs-6 text-center text-secondary">Based
+                                on 15000+
+                                reviews</p>
+                        </p>
+                    </div>
+                    <div class="col-md-2 mt-3">
+                        <h1 class="h1 text-center">|</h1>
+                    </div>
+                    <div class="col-md-5 mt-2">
+                        <p class="fs-3 text-dark text-center fw-bolder">15
+                            Lacs+</p>
+                        <p class="fs-6 text-center text-secondary">Car
+                            Serviced and Repaired</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Card Slider End -->
+
+            <!-- Popular Services Start -->
+            <section class="page3">
+                <div class="container-fluid">
+                    <div class="head-hr mb-2 ms-4">
+                        <hr>
+                    </div>
+                    <div class="head-titel text-capitalize fs-3 ms-4 pt-2">
+                        Popular Services
+                    </div>
+                </div>
+                <div class="row mt-3 p-5">
+                    <div class="col-md-3">
+                        <img src="spa.png" alt class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="Policy.png" alt class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="car-service.png" alt
+                            class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="detailing.png" alt class="img-fluid">
+                    </div>
+                </div>
+                <div class="row p-5 mt-0 pt-0">
+                    <div class="col-md-3">
+                        <img src="clutch.png" alt class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="light.png" alt class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="tyre.png" alt class="img-fluid">
+                    </div>
+                    <div class="col-md-3">
+                        <img src="ac.png" alt class="img-fluid">
+                    </div>
+                </div>
+            </section>
+            <!-- Popular Services End -->
+
+            <!-- Customer Reviews Start -->
+            <section>
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="head-hr mb-2 ms-4">
+                            <hr>
+                        </div>
+                        <div class="head-titel text-capitalize fs-3 ms-4 pt-2">
+                            Customer Reviews
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row p-5 mt-5 px-5">
+                            <div class="col-md-4">
+                                <p class="p-2">
+                                    <h5 class="text-center">I Can Vouch For
+                                        Them</h5>
+                                    <p class="pt-5 pb-5">I always visit
+                                        gomechanic garage near my place for all
+                                        kinds of repair and car needs. They
+                                        always use genuine techniques and parts.
+                                        The staff was very professional, more
+                                        than willing to answer my queries. Great
+                                        place, friendly atmosphere, and
+                                        reasonable rates. Highly
+                                        recommended!</p>
+                                </p>
+                                <p>
+                                    <div class="row mt-4">
+                                        <div
+                                            class="col-md-1 w-25 pe-0 me-0"><span
+                                                class="bi bi-twitter bg-info img-fluid rounded-circle p-2 text-white px-3 fs-3"></span></div>
+                                        <div class="col-md-2 w-25 ps-0 ms-0">
+                                            <p>Shehzan_Khan Twitter</p>
+                                        </div>
+                                    </div>
+                                    <hr class="m-3 text-secondary me-0">
+                                    <div><p class="w-50">Workshop Name
+                                            <p class="w-100 gap-0">GoMechanic -
+                                                HITEC City,
+                                                Hyderabad</p></p></div>
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="p-2">
+                                    <h5 class="text-center">It is definitely
+                                        GoMechanic for me</h5>
+                                    <p class="pt-5 pb-5">One of the best
+                                        customer service I have experienced at a
+                                        car garage. Technicians gave me very
+                                        gave me clear information about what was
+                                        wrong with my car, they also gave me a
+                                        reasonable price quote before starting
+                                        the repair process. The services were
+                                        commendable and satisfactory.</p>
+                                </p>
+                                <p>
+                                    <div class="row mt-3">
+                                        <div
+                                            class="col-md-1 w-25 pe-0 me-0"><span
+                                                class="bi bi-facebook text-primary img-fluid h1 p-2 px-3 con"></span></div>
+                                        <div class="col-md-2 w-25 ps-0 ms-0">
+                                            <p>Raj_Thakur <span
+                                                    class="sub">Facebook</span></p>
+                                        </div>
+                                    </div>
+                                    <hr class="m-3 text-secondary me-0">
+                                    <div><p class="w-50">Workshop Name
+                                            <p class="w-100 gap-0">GoMechanic -
+                                                Vaishali Nagar,
+                                                Jaipur</p></p></div>
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="p-2">
+                                    <h5 class="text-center">Highly
+                                        Recommended!</h5>
+                                    <p class="pt-5">My car suddenly stopped
+                                        in the middle of the road on my way to
+                                        the office, and it was gomechanic to the
+                                        rescue. I called them, they took the
+                                        vehicle and returned it the same day. I
+                                        was very pleased with the
+                                        professionalism and the speediness of
+                                        the service. Their services really
+                                        impressed me a lot and I would
+                                        definitely recommend them to my friends
+                                        and colleagues.</p><br>
+                                </p>
+                                <div class="row">
+                                    <div
+                                        class="col-md-1 w-25 pe-0 me-0"><span
+                                            class="bi bi-google bg-danger img-fluid rounded-circle p-2 text-white fs-3 px-3"></span></div>
+                                    <div class="col-md-2 w-25 ps-0 ms-0">
+                                        <p>Manish_Singh Google</p>
+                                    </div>
+                                </div>
+                                <hr class="m-3 text-secondary me-0">
+                                <div><p class="w-50">Workshop Name
+                                        <p class="w-100 gap-0">GoMechanic -
+                                            Dwarka, Delhi</p></p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Customer Reviews End -->
+
+            <!-- New Look Start -->
+            <section>
+                <div class="container-fluid">
+                    <div class="container-fluid">
+                        <div class="head-hr mb-2 ms-4">
+                            <hr>
+                        </div>
+                        <div class="head-titel text-capitalize fs-3 ms-4 pt-2">
+                            your Car New Look
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-3 py-5 px-2 mb-0 pb-3">
+                    <div class="col-md-5 bg-light shadow p-4 mx-3">
+                        <img src="BMW-Vision-GT-Header-GIF.gif" alt
+                            class="img-fluid shadow">
+                    </div>
+                    <div class="col-md-6 bg-light mx-3 shadow">
+                        <p class="pt-1">
+                            <h1
+                                class="h3 text-center text-light p-2 bg-dark shadow">Here
+                                Is A List Of Legal Car Modifications In
+                                India</h1>
+                            <ol class="m-4 text-dark">
+                                <li class="py-1 fs-5">Upgrading the Tyres</li>
+                                <li class="py-1 fs-5">Repainting (Changing the
+                                    Colour)</li>
+                                <li class="py-1 fs-5">Body Wrapping</li>
+                                <li class="py-1 fs-5">Suspension Upgrade</li>
+                                <li class="py-1 fs-5">Window Tinting</li>
+                                <li class="py-1 fs-5">Modification for the
+                                    Differently-Abled</li>
+                            </ol>
+                        </p>
+                        <div class="nl-list text-end mx-5 my-2">
+                            <a href="Gallery.html" class="btn btn-dark btn-lg">Gallery</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <!-- New Look End -->
+
+            <!-- Reviews Start -->
+            <div class="container-fluid">
+                <div class="row back-light p-5 py-4 my-4">
+                    <div class="col-md-3 item-review">
+                        <p class="fs-2 w-50 lh-1 text-center">3 million+ <span
+                                class="fs-6">CARS SERVICED</span></p>
+                    </div>
+                    <div class="col-md-3 item-review">
+                        <p class="fs-2 w-50 lh-1 text-center">15 Lacs+ <span
+                                class="fs-6 text-uppercase">Happy
+                                customer</span></p>
+                    </div>
+                    <div class="col-md-3 item-review">
+                        <p class="fs-2 w-50 lh-1 text-center">4.7 <span
+                                class="fs-6 text-uppercase">average_rating</span></p>
+                    </div>
+                    <div class="col-md-3 item-review">
+                        <p class="fs-2 w-50 lh-1 text-center">850+ <span
+                                class="fs-6 text-uppercase">workshops_in_india</span></p>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- Reviews End -->
+
+            <!-- Price Comparison Chart Start -->
+            <section>
+                <div class="container-fluid">
+                    <div class="row new-row mt-5">
+                        <div class="col-md-3">
+                            <p class="price-detail text-center mx-5">
+                                <i class="bi bi-car-front-fill fs-4"></i>
+                                <p class="text-center">Car Brand &
+                                    Model</p>
+                                <hr class="m-3">
+                                <p class="text-center">Hatchback</p>
+                                <hr class="m-3">
+                                <p class="text-center">Sedan</p>
+                                <hr class="m-3">
+                                <p class="text-center">Luxury</p>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="price-detail text-center">
+                                <img src="asc-car.png" alt
+                                    class="img-fluid">
+                                <p class="text-center px-5">Authorized Service
+                                    Center
+                                    Price</p>
+                                <hr class="m-3">
+                                <p class="text-center"><strike>&#8377;
+                                        3999</strike></p>
+                                <hr class="m-3">
+                                <p class="text-center"><strike>&#8377;
+                                        4599</strike></p>
+                                <hr class="m-3">
+                                <p class="text-center"><strike>&#8377;
+                                        21999</strike></p>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="price-detail text-center mx-5">
+                                <i class="bi bi-clipboard2-plus-fill fs-4"></i>
+                                <p class="text-center px-5">Local Mechanic
+                                    Price</p>
+                                <hr class="m-3">
+                                <p class="text-center"><strike>&#8377;
+                                        3999</strike></p>
+                                <hr class="m-3">
+                                <p class="text-center"><strike>&#8377;
+                                        3499</strike></p>
+                                <hr class="m-3">
+                                <p class="text-center"><strike>&#8377;
+                                        14999</strike></p>
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p class="price-detail text-center mx-5">
+                                <i class="fs-4"><span
+                                        class="text-danger">D</span>ream <span
+                                        class="text-danger">C</span>ar</i>
+                                <p class="text-center px-5">prise</p>
+                                <hr class="m-3">
+                                <p class="text-center">Hatchback</p>
+                                <hr class="m-3">
+                                <p class="text-center">Sedan</p>
+                                <hr class="m-3">
+                                <p class="text-center">Luxury</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Price Comparison Chart End -->
+
+            <!-- Footer Start -->
+            <div class="container-fluid">
+                <div class="row mt-5 bg-dark text-light">
+                    <div class="col-md-3 ms-3">
+                        <ul class="px-5 py-2">
+                            <li
+                                class="fs-5 fw-bolder px-5 text-start text-white py-2"><a>Links</a></li>
+                            <li class="py-1 px-5 text-start"><a
+                                    href>About</a></li>
+                            <li class="py-1 px-5 text-start"><a
+                                    href>Modification</a></li>
+                            <li class="py-1 px-5 text-start"><a
+                                    href>Insurance</a></li>
+                            <li class="py-1 px-5 text-start"><a
+                                    href>Services</a></li>
+                            <li class="py-1 px-5 text-start"><a
+                                    href>Gallery</a></li>
+                            <li class="py-1 px-5 text-start"><a
+                                    href>Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-3 ms-3">
+                        <ul class="px-5 py-2">
+                            <li
+                                class="fs-5 fw-bolder px-5 text-start text-white my-2"><a>Popular
+                                    Service</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car Ac Gas
+                                    Filling</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Repair</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Towing</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Detailing</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Denting</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Scraping</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="px-5 py-2 mt-4">
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Wash</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Decors</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Accessories</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car Ac
+                                    Service</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car
+                                    Painting</a></li>
+                            <li class="py-1 px-5 text-start"><a href>Car Dry
+                                    Cleaning</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="social-media mt-5">
+                            <label
+                                class="text-xl font-medium leading-5 text-gray-800 text-white">Follow
+                                Me</label><br>
+                            <i
+                                class="bi bi-facebook fs-2 pe-2 text-primary"></i>
+                            <i class="bi bi-twitter fs-2 px-2 text-info"></i>
+                            <i
+                                class="bi bi-instagram fs-2 px-2 text-danger"></i>
+                            <i class="bi bi-google fs-2 px-2 text-warning"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </body>
+    </html>
